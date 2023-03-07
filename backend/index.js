@@ -14,7 +14,7 @@ app.use(express.json({limit:"30mb",extended:true}))
 app.use(express.urlencoded({limit:"30mb",extended:true}))
 app.use(cors())
 app.use("/users",userRouter);  //http://localhost:5000/user/signup
-const MONGODB_URL="mongodb+srv://abhi07on:Age35yKF0L10np0M@cluster0.moksbdl.mongodb.net/tour_db?retryWrites=true&w=majority"
+const MONGODB_URL="mongodb+srv://abhi07on:Age35yKF0L10np0M@cluster0.moksbdl.mongodb.net/?retryWrites=true&w=majority"
 const port =5000;
 
 mongoose.connect(MONGODB_URL)
